@@ -1,26 +1,27 @@
 public class book extends libraryitem{
-    private String author, publisher; 
     private int numberOfPages;
 
-    //getters
-    public String getAuthor(){
-        return author;
+    public book(){}
+
+    public book(String title, int itemNumber, int quantity, String location, boolean instockStatus, String genre, int releaseDate, int numberOfPages){
+        Super(title, itemNumber, quantity, location, instockStatus, genre, releaseDate, numberOfPages);
     }
-    public String getPublisher(){
-        return publisher;
+    
+    
+
+    
+
+    private void Super(String title, int itemNumber, int quantity, String location, boolean instockStatus, String genre,
+            int releaseDate, int numberOfPages2) {
     }
+
+    // getters
     public int getNumberOfPages(){
         return numberOfPages;
     }
 
     //setters
-    public void setAuthor(String author){
-        this.author = author;
-    }
-    public void setPublisher(String publisher){
-        this.publisher = publisher;
-    }
-    public void setNumberOfPages(int numberOfPages){
+    public void setNumberOfPages(int numberOfPages) {
         this.numberOfPages = numberOfPages;
     }
 }
